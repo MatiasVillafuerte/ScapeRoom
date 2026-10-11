@@ -20,5 +20,7 @@ Thumbs.db
 *.userprefs
 *.pidb
 *.booproj
+*.slnx
+.vsconfig
 # Crash reports
 sysinfo.txt
