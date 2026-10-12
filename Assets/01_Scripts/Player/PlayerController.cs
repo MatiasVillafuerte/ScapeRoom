@@ -4,8 +4,13 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     private void Update()
     {
-        Move();
+    Move();
+    if (Input.GetKeyDown(KeyCode.E))
+    {
+    Debug.Log("Interaction key pressed");
     }
+    }
+
     private void Move()
     {
         float h = Input.GetAxis("Horizontal");
