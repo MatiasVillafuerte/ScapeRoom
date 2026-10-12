@@ -2,15 +2,8 @@ using UnityEngine;
 
 public class OldDoorController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OpenDoor()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("Opening door with improved system");
     }
 }
