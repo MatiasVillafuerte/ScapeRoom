@@ -14,6 +14,11 @@ Proyecto colaborativo de laboratorio de Git + GitHub + Visual Studio Code + Unit
 ## Objetivo
 Explorar una habitación, resolver un código, abrir un cofre, obtener una llave y abrir la puerta de 
 salida.
+## Información del proyecto
+
+Escape Room 3D es un videojuego desarrollado en Unity
+que permite explorar una habitación, resolver acertijos
+y encontrar la salida.
 ## Equipo de desarrollo
 
 El equipo está organizado por funcionalidades:
