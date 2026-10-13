@@ -1,4 +1,6 @@
 using UnityEngine;
+
+[RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
@@ -6,42 +8,33 @@ public class PlayerController : MonoBehaviour
     private Vector3 velocity;
     public float jumpHeight = 1.5f;
     public float gravity = -9.81f;
+
     void Start()
     {
-    Move();
-    if (Input.GetKeyDown(KeyCode.F))
-    {
-    Debug.Log("Interaction key pressed");
+        controller = GetComponent<CharacterController>();
     }
-    }
+
     void Update()
     {
-        Move();
         Jump();
         ApplyGravity();
+        Move();
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Interaction key pressed");
         }
     }
-    private void Move()
-    {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(h, 0f, v);
-        transform.Translate(movement * speed * Time.deltaTime);
-    }
+
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
         {
-            velocity.y = Mathf.Sqrt(
-                jumpHeight * -2f * gravity
-            );
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
-    void ApplyGravity()
+
+    private void ApplyGravity()
     {
         if (controller.isGrounded && velocity.y < 0)
         {
@@ -49,7 +42,16 @@ public class PlayerController : MonoBehaviour
         }
 
         velocity.y += gravity * Time.deltaTime;
+    }
 
-        controller.Move(velocity * Time.deltaTime);
+    private void Move()
+    {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        Vector3 movement = transform.TransformDirection(new Vector3(h, 0f, v)) * speed;
+        movement.y = velocity.y;
+
+        controller.Move(movement * Time.deltaTime);
     }
 }
