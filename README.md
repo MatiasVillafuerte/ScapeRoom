@@ -27,3 +27,8 @@ El equipo está organizado por funcionalidades:
 - Interacción con objetos
 - Animaciones
 - Sistema de acertijos
+
+## Actualización del controlador del jugador
+
+Se revisó el script PlayerController.cs para documentar
+el funcionamiento del sistema de movimiento del Escape Room.

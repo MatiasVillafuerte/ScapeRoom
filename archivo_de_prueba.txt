@@ -1,0 +1,2 @@
+Archivo temporal utilizado para probar el movimiento del jugador.
+Este archivo no debe formar parte del repositorio final.
