@@ -27,3 +27,14 @@ El equipo está organizado por funcionalidades:
 - Interacción con objetos
 - Animaciones
 - Sistema de acertijos
+
+## Sistemas implementados
+
+El Escape Room cuenta con los siguientes sistemas:
+
+- Movimiento del jugador mediante PlayerController.
+- Interacción con objetos mediante PlayerInteraction.
+- Administración de puzzles mediante PuzzleManager.
+
+Estos sistemas permiten controlar al jugador e interactuar
+con los elementos del escenario.
