@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
     Move();
-    if (Input.GetKeyDown(KeyCode.E))
+    if (Input.GetKeyDown(KeyCode.F))
     {
     Debug.Log("Interaction key pressed");
     }
