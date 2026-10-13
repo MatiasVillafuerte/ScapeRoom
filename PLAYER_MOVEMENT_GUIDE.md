@@ -3,10 +3,10 @@
 
 ## Controles
 
-- W: Mover hacia adelante.
-- A: Mover hacia la izquierda.
-- S: Mover hacia atras.
-- D: Mover hacia la derecha.
+- W-flecha arriba: Mover hacia adelante.
+- A-flecha izquierda: Mover hacia la izquierda.
+- S-flecha abajo: Mover hacia atras.
+- D-flecha derecha: Mover hacia la derecha.
 - Espacio: Saltar.
 - E: Interactuar con objetos.
 
@@ -22,3 +22,4 @@ interaccion.
 - Comprobar que el jugador puede saltar.
 - Comprobar la deteccion de la tecla E.
 - Verificar que no existan errores en Unity.
+- La gravedad puede alterar el salto
