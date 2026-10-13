@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour
     public float gravity = -9.81f;
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+    Move();
+    if (Input.GetKeyDown(KeyCode.F))
+    {
+    Debug.Log("Interaction key pressed");
+    }
     }
     void Update()
     {
