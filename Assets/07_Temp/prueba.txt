@@ -1,0 +1,17 @@
+Registro temporal del laboratorio Git + Unity.
+
+Prueba 1: Movimiento del jugador correcto.
+Prueba 2: Interacción con tecla E correcta.
+Prueba 3: PuzzleManager funcionando.
+
+Este archivo es generado para pruebas y no debe subirse al repositorio.sss
+
+sssssssss
+
+sdasdasda
+
+
+si
+
+
+ssssssssssssssssss
