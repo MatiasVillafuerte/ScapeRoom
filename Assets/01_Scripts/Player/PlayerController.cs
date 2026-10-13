@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Interaction key pressed");
         }
     }
+
     private void Move()
     {
         float h = Input.GetAxis("Horizontal");
