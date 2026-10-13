@@ -44,7 +44,8 @@ public class DoorController : MonoBehaviour
 
         if (isOpen)
         {
-            transform.localRotation = openedRotation;
+            // ERROR: La puerta conserva su rotacion cerrada
+            transform.localRotation = closedRotation;
             Debug.Log("Door opened");
         }
         else
