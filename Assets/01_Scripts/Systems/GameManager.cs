@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Initialize();
+        Initialize(); 
         Debug.Log("GameManager iniciado");
     }
 

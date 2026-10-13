@@ -769,10 +769,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1153934265}
   - component: {fileID: 1153934264}
+  - component: {fileID: 1153934266}
   - component: {fileID: 1153934263}
   - component: {fileID: 1153934262}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -871,6 +872,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1153934266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153934261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65bd43f76e0cc2b42bcf02c60fe85e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorController
+  player: {fileID: 1302683606}
+  interactionDistance: 3
+  openAngle: 90
+--- !u!4 &1302683606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9034118590897142777, guid: 16606af04713a524ba4658982b897f26, type: 3}
+  m_PrefabInstance: {fileID: 6852552055155950696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6852552055155950696
 PrefabInstance:
   m_ObjectHideFlags: 0
