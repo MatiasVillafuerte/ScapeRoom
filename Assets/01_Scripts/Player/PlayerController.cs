@@ -1,6 +1,4 @@
-using Unity.Android.Gradle.Manifest;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
