@@ -24,3 +24,5 @@ Thumbs.db
 .vsconfig
 # Crash reports
 sysinfo.txt
+# Archivos temporales del laboratorio
+/07_Temp/
