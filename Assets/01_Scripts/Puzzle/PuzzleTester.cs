@@ -6,6 +6,7 @@ public class PuzzleTester : MonoBehaviour
 
     private void Update()
     {
+        // Caso 12: verificacion del controlador del jugador.
         if (Input.GetKeyDown(KeyCode.K))
         {
             puzzleManager.CollectKey();
